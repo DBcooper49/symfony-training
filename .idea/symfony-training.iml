@@ -149,12 +149,15 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/deptrac/deptrac" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jetbrains/phpstorm-stubs" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/murtukov/php-code-generator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/overblog/graphql-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/graphviz" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpspec/php-diff" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpspec/phpspec" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpspec/prophecy" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpstan/phpstan" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/messenger" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/webonyx/graphql-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
