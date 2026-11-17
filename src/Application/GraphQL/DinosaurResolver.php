@@ -6,17 +6,21 @@ use Domain\Collection\DinosaursCollection;
 use Domain\Exception\DinosaurNotFoundException;
 use Domain\Model\Dinosaur;
 use Domain\UseCase\CreateDinosaur;
+use Symfony\Bundle\SecurityBundle\Security;
+
 final readonly class DinosaurResolver
 {
     public function __construct(
         private DinosaursCollection $dinosaurs,
         private CommandBus $commandBus,
+        private Security $security,
     )
     {
     }
 
     public function dinosaurs(?string $search): array
     {
+        $this->security->getUser() ?? throw new \RuntimeException('User not authenticated');
         return $this->dinosaurs->search($search);
     }
 
