@@ -22,6 +22,7 @@ final class LogWhenDinosaurIsBorn
 
     public function __invoke(DinosaurIsBorn $event): void
     {
+
         $dinosaurId = $event->getAggregateRootId();
 
         $dinosaur = $this->dinosaursCollection->find($dinosaurId);

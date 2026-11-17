@@ -1,6 +1,6 @@
 ---
 services:
-  php:
+  php: &php
     platform: linux/x86_64
     build: .
     environment:
@@ -14,6 +14,9 @@ services:
     volumes:
       - .:/usr/src/app:rw
     restart: unless-stopped
+  consumer:
+    <<: *php
+    command: bin/console messenger:consume async -vv
 
   nginx:
     platform: linux/x86_64
